@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>zyeditor demo</title>
+<script type="text/javascript" src="zyeditor_text.js"></script>
+<body>
+<div id="editor">
+	<script>
+		var ed1=new ZYEDITOR_TEXT();
+		ed1.show_editor();
+		ed1.set_content("good start");
+	</script>
+</div>
+<div id="editor2"></div>
+</body>
+<script>
+	var ed2= new ZYEDITOR_TEXT();
+	ed2.show_editor(document.getElementById("editor2"));
+</script>
+</html>
